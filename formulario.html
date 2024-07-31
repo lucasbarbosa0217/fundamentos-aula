@@ -27,44 +27,38 @@
 		</div>
 		<nav class="header__nav">
 			<a class="nav__link" href="./index.html">Descubra mais detalhes sobre o projeto.</a>
-			<a class="nav__link" href="./formulario.html">Fale conosco.</a>
-
 		</nav>
 	</header>
 
 	<main class="main">
 		<div class="main__container">
-			<h2>Conheça os participantes do projeto Re;Aprender:</h2>
-			<ul>
-				<li>
-					Lucas Barbosa |
-					<a href="https://linkedin.com/in/lucasbarbosa0217">Linkedin</a>
-				</li>
-				<li>
-					Palloma Rangel |
-					<a href="https://www.linkedin.com/in/pallomasilva/">Linkedin</a>
-				</li>
-				<li>
-					Rhaíssa Lima |
-					<a href="https://www.linkedin.com/in/rhaissabg/">Linkedin</a>
-				</li>
-				<li>
-					Flavio Coutinho |
-					<a href="https://www.linkedin.com/in/flavio-coutinho-b47a42172/">Linkedin</a>
-				</li>
-				<li>
-					Willian Serafim |
-					<a href="https://www.linkedin.com/in/willian-serafim-9481782a4/">Linkedin</a>
-				</li>
-				<li>
-					Bianka Bonete Staianof |
-					<a href="https://www.linkedin.com/in/bianka-bonete-staianof-27b950b4/">Linkedin</a>
-				</li>
-				<li>
-					Jailson Martins |
-					<a href="https://www.linkedin.com/in/jailsonmartinsfilho/">Linkedin</a>
-				</li>
-			</ul>
+			<form onsubmit="enviar(event)" id="form" class="form">
+
+				<div class="formInput">
+					<label for="nomeInput">Nome:</label>
+					<input type="text" name="nome" id="nomeInput" onkeyup="validarNome()" />
+					<p id="erroNome" class="erro"></p>
+				</div>
+				<div class="formInput">
+					<label for="emailInput">Email:</label>
+					<input type="text" name="email" id="emailInput" onkeyup="validarEmail()" />
+					<div>	<p id="erroEmail" class="erro"></p></div>
+
+				</div>
+				<div class="formInput">
+					<label for="mensagemInput">Mensagem:</label>
+					<textarea name="mensagem" id="mensagemInput" onkeyup="validarMensagem()"></textarea>
+					<p id="erroMensagem" class="erro"></p>
+				</div>
+				<div class="formInput">
+					<input type="submit" id="submit"/>
+				</div>
+
+			</form>
+					<iframe id="mapa"onmouseover="hover()" onmouseleave="hoverCancel()" height="450"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7313.007156173212!2d-46.65772557970208!3d-23.58626623555716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59fa78212c09%3A0xd8701e7ec2a06133!2sPra%C3%A7a%20da%20Paz!5e0!3m2!1spt-BR!2sbr!4v1722454796208!5m2!1spt-BR!2sbr"
+						style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 		</div>
 	</main>
 
@@ -74,6 +68,8 @@
 		</p>
 		<p>© 2024 Generation: You Employed, Inc.</p>
 	</footer>
+
+	<script src="./assets/scripts/form.js" type="text/javascript"/>
 </body>
 
 </html>

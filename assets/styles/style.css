@@ -103,6 +103,47 @@ body {
   font-style: italic;
 }
 
+.erro{
+  color: red;
+}
+
+.form{
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  gap: 1rem;
+}
+
+.formInput{
+  display: flex;
+  flex-flow: column nowrap;
+}
+.formInput textarea{
+  max-width: 100%;
+  min-height: 3rem;
+}
+
+.form input{
+  padding: 0.5rem;
+}
+
+#mapa{
+  width: 70%;
+  transition: width .5s;
+  align-self: center;
+}
+
+#submit{
+  background-color: pink;
+  border:none;
+  padding: 0.5rem;
+}
+
+#submit:active{
+  background-color: #f395a3;
+
+}
+
 @media (max-width: 37.5rem) {
   .main {
     padding: 0;
